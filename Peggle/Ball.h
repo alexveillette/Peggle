@@ -8,12 +8,14 @@ class Ball :
 {
 public:
 	Ball();
+	Ball(float initialRotDeg);
 	~Ball();
 
 	void Update();
 
 private:
-	D3DXVECTOR3 pivot;
+	float rot;
+	float speed;
 
 };
 

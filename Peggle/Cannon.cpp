@@ -17,14 +17,20 @@ Cannon::~Cannon()
 
 void Cannon::Update()
 {
-	if (gDInput->keyDown(DIKEYBOARD_RIGHT))
+	if (gDInput->keyDown(DIK_RIGHT))
 	{
 		rotation += 30.0f * gTimer->GetDeltaTime();
 	}
 
-	if (gDInput->keyDown(DIKEYBOARD_LEFT))
+	if (gDInput->keyDown(DIK_LEFT))
 	{
 		rotation -= 30.0f * gTimer->GetDeltaTime();
+	}
+
+	if (gDInput->keyPressed(DIK_SPACE))
+	{
+		Ball* b = new Ball(rotation);
+		b->SetPosition(GetPosition().x, GetPosition().y);
 	}
 
 	SetRotationDeg(0, 0, rotation);

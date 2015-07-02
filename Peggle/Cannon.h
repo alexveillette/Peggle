@@ -1,7 +1,7 @@
 #pragma once
 #include "Sprite.h"
 #include "ResourceIDs.h"
-
+#include "Ball.h"
 class Cannon :
 	public Sprite
 {

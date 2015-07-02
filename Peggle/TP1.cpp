@@ -11,7 +11,7 @@ Peggle::Peggle()
 	Textures->LoadTexture(Texture::SKY, "skyback.jpg");
 
 
-	Ball* ball = new Ball();
+	//Ball* ball = new Ball();
 	Cannon* cannon = new Cannon();
 	Peg* peg = new Peg();
 
