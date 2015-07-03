@@ -58,10 +58,6 @@ void Ball::Update()
 		{
 			mDir = D3DXVECTOR2(GetPosition().x, GetPosition().y) - col->GetPosition();
 			D3DXVec2Normalize(&mDir, &mDir);
-			//If one of the collider is a peg
-			if (col->GetGameObject()->GetID() == Components::Peg)
-			{
-			}
 		}
 		mDir.y -= gravity * dt;
 		currentPos.x += mDir.x * speed * dt;

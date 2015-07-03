@@ -44,8 +44,6 @@ void Peggle::InitBoard()
 	Sprite* skyBack = new Sprite(Texture::SKY);
 	skyBack->SetPosition(-900, -500);
 
-
-
 	// Init PEGS
 
 	//PigPeg1

@@ -10,6 +10,7 @@
 #include "MousePeg.h"
 #include "LadyPeg.h"
 #include "Wall.h"
+#include "CRectangle.h"
 
 class Peggle :
 	public Component
