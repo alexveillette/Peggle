@@ -2,6 +2,18 @@
 #define ResourcesID
 
 
+namespace Components
+{
+	enum ID
+	{
+		Ball,
+		Peg,
+		Basket,
+		Cannon,
+		Wall
+	};
+}
+
 namespace Texture
 {
 	enum ID
@@ -12,7 +24,8 @@ namespace Texture
 		MOUSEPEG,
 		LADYPEG,
 		BASKET,
-		SKY
+		SKY,
+		WALL
 	};
 }
 
