@@ -9,8 +9,11 @@
 #include "Basket.h"
 #include "MousePeg.h"
 #include "LadyPeg.h"
-#include "Wall.h"
+#include "Wall1.h"
+#include "Wall2.h"
+#include "Wall3.h"
 #include "CRectangle.h"
+#include "StartScreen.h"
 
 class Peggle :
 	public Component
@@ -27,4 +30,9 @@ public:
 	void InitBoard();
 	float screenWidth;
 	float screenHeight;
+
+	bool gameStarted = false;
+
+private:
+	StartScreen* startScreen;
 };

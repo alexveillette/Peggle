@@ -14,17 +14,23 @@ public:
 
 	void Update();
 	void Shoot(float cannonRotation);
-	void Bounce();
 
+	int GetNumberOfLives(){ return numberOfLives; }
+
+	void RestartGame();
 private:
 	float rot;
 	float speed;
 	float gravity;
-
 	bool isActive;
+
+	//This int manages the number of lives the player has.
+	int numberOfLives;
+
 	D3DXVECTOR3 cannonLength;
 	D3DXVECTOR3 currentPos;
 	D3DXVECTOR2 mDir;
 
+	//Circle collider
 	CCircle* collider;
 };

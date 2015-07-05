@@ -21,5 +21,8 @@ private:
 	D3DXVECTOR3 dir;
 	D3DXVECTOR3 currentPos;
 
+	//Rectangle Collider
+	CRectangle* basketCollider;
+
 };
 

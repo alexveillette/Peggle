@@ -7,7 +7,9 @@ namespace Components
 	enum ID
 	{
 		Ball,
-		Peg,
+		PigPeg,
+		MousePeg,
+		LadyPeg,
 		Basket,
 		Cannon,
 		Wall
@@ -25,7 +27,29 @@ namespace Texture
 		LADYPEG,
 		BASKET,
 		SKY,
-		WALL
+		WALL,
+		LIVESNUMBER1,
+		LIVESNUMBER2,
+		LIVESNUMBER3,
+		LIVESFONT,
+		GAMEOVER,
+		STARTSCREEN
+	};
+}
+
+namespace Sound
+{
+	enum ID
+	{
+		intro,
+		stage,
+		gameOver,
+		yay,
+		boo,
+		eek,
+		squish,
+		oink
+
 	};
 }
 

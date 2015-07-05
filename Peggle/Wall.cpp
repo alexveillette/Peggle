@@ -1,24 +1,21 @@
-#include "Wall.h"
+#include "Wall1.h"
 
 
-Wall::Wall()
+Wall1::Wall1()
 	: Sprite(Texture::WALL)
 {
+	//Setting ID and collider.
 	this->SetID(Components::Wall);
-	D3DXVECTOR3 center(this->GetTextureInfos()->infos.Width / 2, this->GetTextureInfos()->infos.Height / 2, 0.0f);
-	this->SetPivot(center);
-	this->SetRotationDeg(0, 0, 0);
-
-	collider = new CRectangle(this, 0, 0, 300, 200);
+	CRectangle* wallCollider = new CRectangle(this, (int)gApp->GetParam().BackBufferWidth / 2 -28, -500.f, 100, 1000);
 }
 
 
-Wall::~Wall()
+Wall1::~Wall1()
 {
 
 }
 
-void Wall::Update()
+void Wall1::Update()
 {
 
 
